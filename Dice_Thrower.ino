@@ -11,7 +11,7 @@ void setup()
     pinMode(ledArr[i], OUTPUT);
   }
   Serial.begin(9600);
-  randomSeed(analogRead(A0));
+  randomSeed(analogRead(A0)); //creates a more random start so the sequence isnt the same every single run
 }
 
 
@@ -19,8 +19,8 @@ void loop()
 {
   int num;
   int mapChange;
-  num = random(9999) + 1;
-  mapChange = map(num, 1, 10000, 1, 6); 
+  num = random(9999) + 1; // I'm not really sure why I did this
+  mapChange = map(num, 1, 10000, 1, 6); // a higher random makes for a more random experience. by mapping it will create more randomness.
   for (int i = 0; i < mapChange; i++)
   {
     digitalWrite(ledArr[i], HIGH);
