@@ -19,8 +19,8 @@ void loop()
 {
   int num;
   int mapChange;
-  num = random(999) + 1;
-  mapChange = map(num, 1, 1000, 1, 6); 
+  num = random(9999) + 1;
+  mapChange = map(num, 1, 10000, 1, 6); 
   for (int i = 0; i < mapChange; i++)
   {
     digitalWrite(ledArr[i], HIGH);
