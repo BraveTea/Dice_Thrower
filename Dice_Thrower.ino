@@ -11,7 +11,7 @@ void setup()
     pinMode(ledArr[i], OUTPUT);
   }
   Serial.begin(9600);
-  randomSeed(analogRead(A0)); //creates a more random start so the sequence isnt the same every single run
+  randomSeed(analogRead(A0)); //creates a more random start so the sequence isn't the same every single run
 }
 
 
