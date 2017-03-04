@@ -1,6 +1,6 @@
 //Dice Thrower
 
-const int DIM_COUNT = 6;
+const int DIM_COUNT = 6; //Dimension Count
 int ledArr[DIM_COUNT] = {2, 3, 4, 5, 6, 7};
 
 
